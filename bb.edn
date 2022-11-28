@@ -1,0 +1,7 @@
+{:paths ["script"]
+;;  :deps {medley/medley {:mvn/version "1.3.0"}}
+ :min-bb-version "0.7.0"
+ :tasks
+ {check (do (println "checking")
+            (require '[clojure.tools.cli :refer [parse-opts]])
+            (prn parse-opts))}}
